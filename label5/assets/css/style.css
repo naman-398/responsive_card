@@ -1,0 +1,146 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@700&family=Work+Sans&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style-type: none;
+ }
+
+ .container {
+     width: 1140px;
+     padding-left: 12px;
+     padding-right: 12px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .row {
+     flex-direction: row;
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -12px;
+     margin-right: -12px;
+     position: absolute;
+     top: 30%;
+ }
+
+ .row::after {
+     display: table;
+     clear: both;
+ }
+
+ .col3 {
+     width: 25%;
+     padding-left: 12px;
+     padding-right: 12px;
+ }
+
+ .column {
+     float: left;
+     width: 25%;
+     padding: 15px;
+ }
+
+ .text-align {
+     text-align: center;
+     justify-content: center;
+ }
+
+ .font1 {
+     color: #000;
+     font-family: Work Sans;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 123.6%;
+     padding-top: 15px;
+ }
+
+ .font2 {
+     color: var(--gray-paragraph, #7B7B7B);
+     font-family: Work Sans;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 150.6%;
+     padding-top: 10px;
+ }
+
+ .card {
+     border: 1px solid transparent;
+    max-width: 270px;
+    width: 100%;
+     height: 350px;
+     overflow: hidden;
+     cursor: pointer;
+     background: var(--white, #FFF);
+     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+ }
+
+ .relative {
+     position: relative;
+     overflow: hidden;
+ }
+
+ .icon-box-container {
+     height: 100%;
+     top: 0;
+     right: -50px;
+     position: absolute;
+     display: flex;
+     transition: all 0.4s;
+     flex-direction: column;
+     justify-content: center;
+
+     align-items: center;
+ }
+
+ .card:hover .icon-box-container {
+     right: 0;
+     transition: all .4s;
+ }
+
+ .icon-box {
+     width: 40px;
+     height: 40px;
+     display: flex;
+     background-color: #FFF;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 7px;
+
+
+ }
+
+ .icon-box:hover {
+     background: #FF5300;
+     box-shadow: 1px 7px 10px 0px rgba(255, 83, 0, 0.50);
+ }
+
+ .icon-box:hover svg path {
+     fill: #FFF;
+ }
+
+ .col12 {
+     width: 100%;
+     padding-left: 12px;
+     padding-right: 12px;
+ }
+
+ @media(min-width:576px) {
+     .col-md-6 {
+         width: 50%;
+         padding-left: 12px;
+         padding-right: 12px;
+     }
+ }
+
+ @media(min-width:992px) {
+     .col-lg-3 {
+         width: 25%;
+         padding-left: 12px;
+         padding-right: 12px;
+     }
+ }
